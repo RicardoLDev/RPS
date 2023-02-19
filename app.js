@@ -36,7 +36,7 @@ function getResult(){
     if (computerChoice === "rock" && userChoice === "scissors"){
         result = "Sorry, you lost"
     }
-    if (computerChoice === "scissor" && userChoice === "paper"){
+    if (computerChoice === "scissors" && userChoice === "paper"){
         result = "Sorry, you lost"
     }
     if (computerChoice === "paper" && userChoice === "rock"){
