@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: auto;
+}
+
+.box{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.score{
+    height: 80px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.game{
+    background-color: black;
+    display: flex;
+    flex-grow: 1;
+}
+
+.player-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.player-icons img{
+    width: 250px;
+}
+
+.computer-icons img{
+    width: 250px;
+}
+
+.computer-icons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: orange;
+}
+
+.player-icons button{
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    padding: 15px;
+}
+
+.computer-icons button{
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    padding: 15px;
+}
+
+
+
+.player-icons button:hover{
+    background-color: aquamarine;
+}

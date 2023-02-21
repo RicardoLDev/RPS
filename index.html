@@ -2,18 +2,31 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        
-        <h2>Computer Choice: <span id="computer-choice"></span></h2>
-        <h2>Your Choice: <span id="user-choice"></span></h2>
-        <h2>Result: <span id="result"></span></h2>
 
-        <button id="rock">rock</button>
-        <button id="paper">paper</button>
-        <button id="scissors">scissors</button>
+        <div class="box">
+            <div class="score">
+                <h2>Computer Choice: <span id="computer-choice"></span></h2>
+                <h2>Your Choice: <span id="user-choice"></span></h2>
+                <h2>Result: <span id="result"></span></h2>
+            </div>
 
+            <div class="game">
+                <div class="player-icons">
+                    <button><img id="Rock" src="icons/rock.png" alt="no rock"></button>
+                    <button><img id="Paper"src="icons/paper.png" alt="no paper"></button>
+                    <button><img id="Scissors" src="icons/scissors.png" alt="no scissors"></button>
+            </div>
+
+            <div class="computer-icons">
+                <button><img src="icons/rock.png" alt="no rock"></button>
+                <button><img src="icons/paper.png" alt="no paper"></button>
+                <button><img src="icons/scissors.png" alt="no scissors"></button>
+            </div>
+        </div>
 
         <script src="app.js" charset="utf-8"></script>
     </body>
