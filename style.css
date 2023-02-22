@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: comic sans ms;
     background-color: auto;
 }
 
@@ -14,21 +15,41 @@
     height: 80px;
     background-color: aquamarine;
     text-align: center;
+    padding-bottom: 2vh;
 }
 
 .game{
     background-color: black;
     display: flex;
     flex-grow: 1;
+    text-align: center;
+}
+
+.player-side{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+.player-side h1{
+    position: relative;
+}
+
+.computer-side{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: orange;
 }
 
 .player-icons{
+    flex-grow: 2;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
     flex-wrap: wrap;
     padding: 10px;
-    background-color: lightblue;
 }
 
 .player-icons img{
@@ -40,12 +61,12 @@
 }
 
 .computer-icons{
+    flex-grow: 2;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    flex-grow: 1;
     padding: 10px;
-    background-color: orange;
 }
 
 .player-icons button{
