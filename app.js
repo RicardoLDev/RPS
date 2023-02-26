@@ -5,9 +5,9 @@ const possibleChoices = document.querySelectorAll('button')
 const computerRock = document.getElementById("comp-rock");
 const computerPaper = document.getElementById("comp-paper");
 const computerScissors = document.getElementById("comp-scissors");
-const userRock = document.getElementById("Rock");
-const userPaper = document.getElementById("Paper");
-const userScissors = document.getElementById("Scissors");
+const userRock = document.getElementById("user-rock");
+const userPaper = document.getElementById("user-paper");
+const userScissors = document.getElementById("user-scissors");
 let userChoice
 let computerChoice
 let result 
@@ -19,6 +19,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     generateComputerChoice()
     getResult()
     removeChoices()
+    
   }
 }))
 
@@ -40,6 +41,18 @@ function generateComputerChoice(){
 
 function getResult(){
     if (computerChoice === userChoice){
+        if (computerChoice === "Rock"){
+            computerPaper.remove();
+            computerScissors.remove();
+        }
+        if (computerChoice === "Paper"){
+            computerRock.remove();
+            computerScissors.remove();
+        }
+        if (computerChoice === "Scissors"){
+            computerPaper.remove();
+            computerRock.remove();
+        }
         result = "It's a Draw"
     }
     if (computerChoice === "Rock" && userChoice === "Scissors"){

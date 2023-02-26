@@ -11,6 +11,26 @@
     height: 100vh;
 }
 
+.box a{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.replay{
+    border: 2px solid #d53522;
+    color: #d53522;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 10em;
+    padding: 25px;
+    font-weight: 400;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+
 .score{
     height: 80px;
     background-color: aquamarine;
@@ -32,9 +52,6 @@
     background-color: lightblue;
 }
 
-.player-side h1{
-    position: relative;
-}
 
 .computer-side{
     display: flex;
@@ -44,12 +61,11 @@
 }
 
 .player-icons{
-    flex-grow: 2;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items:center;
     flex-wrap: wrap;
-    padding: 10px;
 }
 
 .player-icons img{
@@ -61,12 +77,11 @@
 }
 
 .computer-icons{
-    flex-grow: 2;
+    flex-grow: 1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
 }
 
 .player-icons button{
@@ -75,7 +90,6 @@
     cursor: pointer;
     appearance: none;
     background-color: inherit;
-    padding: 15px;
 }
 
 .computer-icons button{
@@ -89,4 +103,9 @@
 
 .player-icons button:hover{
     background-color: aquamarine;
+}
+
+.replay:hover{
+    color: white;
+    box-shadow: 0 0 40px 40px #d53522 inset;
 }
